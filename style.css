@@ -1,0 +1,241 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+  max-width: fit-content;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 400px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* desktop view */
+@media (min-width: 400px) {
+  .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+nav ul {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+.user-details {
+  display: flex;
+  justify-content: space-between;
+
+  
+ 
+}
+
+.box {
+  padding: 10px;
+}
+
+.button {
+  text-align: right;
+}
+
+.about {
+  display: flex;
+}
+
+img {
+  padding: 25px;
+  max-width: fit-content;
+}
+
+.ideas {
+  display: flex;
+  justify-content: space-evenly;
+}
+}
+
+/* -------  Media Query ------- */
+
+@media (max-width: 700px){
+
+
+.container {
+  flex-direction: column;
+}
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  
+    padding-bottom: 20px;
+    flex-direction: row;
+  }
+  
+  form {
+    text-align: center;
+    
+  }
+  
+  .user-details  {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+ label {
+   
+   margin-right: 25px;
+   text-align: left;
+   display: block;
+ }
+  
+  .about {
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  main img {
+    
+    
+    width: 100%;
+    padding: 25px;
+  }
+  
+  .ideas {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  h3 {
+    text-align: left;
+    margin-left: 25px;
+  }
+  
+  .alternate-background {
+    padding: 50px;
+  }
+  }
+  
